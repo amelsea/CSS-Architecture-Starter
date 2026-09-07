@@ -62,6 +62,119 @@
 
 @layer layout {
   /* Add page-level layout and composition classes here. */
+
+  .page-shell {
+
+    width: min(
+      calc(100% - 2rem),
+      var(--content-max)
+    );
+
+    margin-inline: auto;
+
+  }
+
+  .site-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+
+    padding:
+      var(--space-lg)
+      max(1rem, 4vw);
+
+    border-bottom:
+      1px solid var(--color-border);
+
+    background-color: var(--color-surface);
+
+  }
+
+  .nav-list {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap:
+      var(--space-sm)
+      var(--space-lg);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+
+  .hero {
+
+    padding-block: var(--space-3xl);
+
+    background-color: var(--color-accent);
+
+  }
+
+  .hero-content {
+
+    max-width: 60rem;
+
+  }
+
+  .hero-content > p:not(.eyebrow) {
+
+    max-width: 48rem;
+    margin-top: var(--space-lg);
+
+    font-size: 1.1rem;
+
+  }
+
+  .section {
+
+    padding-block: var(--space-3xl);
+
+  }
+
+  .section-heading {
+
+    margin-bottom: var(--space-xl);
+
+  }
+
+  .card-grid {
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: var(--space-lg);
+
+  }
+
+  @media (max-width: 48rem) {
+
+    .site-header {
+
+      align-items: flex-start;
+      flex-direction: column;
+
+    }
+
+    .card-grid {
+
+      grid-template-columns: 1fr;
+
+    }
+
+    .hero {
+
+      padding-block: var(--space-2xl);
+
+    }
+
+  }
 }
 
 @layer components {

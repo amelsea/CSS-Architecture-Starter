@@ -380,6 +380,19 @@
     white-space: nowrap;
     clip-path: inset(50%);
   }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .stack-sm > * + * {
+    margin-block-start: var(--space-sm);
+  }
+
+  .stack-md > * + * {
+    margin-block-start: var(--space-lg);
+  
+  }
 }
 
 @layer overrides {
@@ -459,3 +472,4 @@
 
   }
 }
+

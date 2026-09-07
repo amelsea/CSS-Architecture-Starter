@@ -384,8 +384,78 @@
 
 @layer overrides {
   /* Keep this layer small. Use it only for intentional exceptions. */
+.card:first-child {
+    border-top: 4px solid var(--color-primary);
+  }
+
 }
 
 @media print {
   /* Add print improvements here. */
+@page {
+
+    margin: 0.7in;
+
+  }
+
+  body {
+
+    background: #ffffff;
+
+    color: #000000;
+
+    font-size: 11pt;
+
+  }
+
+  .site-header,
+  nav,
+  .button {
+
+    display: none;
+
+  }
+
+  .hero {
+
+    padding-block: 1rem;
+
+    background: #ffffff;
+
+  }
+
+  .section {
+
+    padding-block: 1.25rem;
+
+  }
+
+  .card-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .card,
+  .callout {
+
+    break-inside: avoid;
+
+    box-shadow: none;
+
+    border: 1px solid #999999;
+
+  }
+
+  a {
+
+    color: #000000;
+
+  }
+
+  .site-footer {
+
+    border-top: 1px solid #999999;
+
+  }
 }

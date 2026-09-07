@@ -179,6 +179,195 @@
 
 @layer components {
   /* Add reusable components such as buttons, cards, callouts, and forms here. */
+ .site-logo {
+
+    color: var(--color-text);
+
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+  }
+
+  .nav-list a {
+
+    display: inline-block;
+
+    padding:
+      var(--space-xs)
+      var(--space-sm);
+
+    color: var(--color-text);
+
+    text-decoration: none;
+
+    border-radius: var(--radius-sm);
+
+  }
+
+  .nav-list a[aria-current="page"] {
+
+    color: var(--color-primary-dark);
+
+    font-weight: 700;
+
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em;
+    text-underline-offset: 0.25em;
+
+  }
+
+
+  .eyebrow {
+
+    color: var(--color-primary-dark);
+
+    font-size: var(--font-size-small);
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+  }
+
+  .button {
+
+    display: inline-block;
+
+    padding:
+      0.7rem
+      1.2rem;
+
+    border:
+      2px solid var(--color-primary-dark);
+
+    border-radius: var(--radius-pill);
+
+    background-color: var(--color-primary);
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+  }
+
+  .button:hover {
+
+    background-color: var(--color-primary-dark);
+
+  }
+
+  .card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+    min-height: 15rem;
+
+    padding: var(--space-xl);
+
+    border:
+      1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-surface);
+
+    box-shadow:
+      0 0.5rem 1.5rem
+      rgb(37 34 31 / 8%);
+
+  }
+
+  .card p {
+
+    flex: 1;
+
+  }
+
+  .card a {
+
+    font-weight: 700;
+
+  }
+
+  .callout {
+
+    padding: var(--space-xl);
+
+    border-left:
+      0.5rem solid var(--color-primary);
+
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-surface);
+
+  }
+
+  .callout p {
+
+    max-width: 55rem;
+
+    margin-top: var(--space-sm);
+
+  }
+
+  .interest-form {
+
+    display: grid;
+
+    max-width: 38rem;
+
+    gap: var(--space-sm);
+
+    margin-top: var(--space-lg);
+
+  }
+
+  .interest-form label {
+
+    margin-top: var(--space-sm);
+
+    font-weight: 700;
+
+  }
+
+  .interest-form input,
+  .interest-form select {
+
+    width: 100%;
+
+    padding: 0.75rem;
+
+    border:
+      1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-surface);
+
+    color: var(--color-text);
+
+  }
+
+  .interest-form .button {
+
+    justify-self: start;
+
+    margin-top: var(--space-md);
+
+  }
 }
 
 @layer utilities {

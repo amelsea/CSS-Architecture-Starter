@@ -58,6 +58,10 @@
   svg {
     max-width: 100%;
   }
+    :focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: 4px;
+  }
 }
 
 @layer layout {

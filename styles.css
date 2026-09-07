@@ -101,10 +101,7 @@
 @layer layout {
   /* Add page-level layout and composition classes here. */
 
-  .page-shell {
-    width: min(calc(100% - 2rem), var(--content-max));
-    margin-inline: auto;
-  }
+
 
   .site-header {
     display: flex;
@@ -263,14 +260,14 @@
   }
 
   .interest-form {
-  display: grid;
-  grid-template-columns: 10rem minmax(0, 1fr);
-  align-items: center;
-  column-gap: var(--space-lg);
-  row-gap: var(--space-md);
-  max-width: 40rem;
-  margin-top: var(--space-xl);
-}
+    display: grid;
+    grid-template-columns: 10rem minmax(0, 1fr);
+    align-items: center;
+    column-gap: var(--space-lg);
+    row-gap: var(--space-md);
+    max-width: 40rem;
+    margin-top: var(--space-xl);
+  }
 
 .interest-form label {
   font-weight: 700;
